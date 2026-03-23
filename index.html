@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>放射線技師が副業で月3万円を稼ぐ完全ロードマップ | ボーン</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+  :root {
+    --navy: #0d1b2a;
+    --navy-mid: #1b2d42;
+    --navy-light: #243a54;
+    --gold: #c8922a;
+    --gold-light: #e8b84b;
+    --gold-pale: #fdf3dc;
+    --cream: #faf8f3;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #3d4a5c;
+    --text-light: #6b7a8d;
+    --accent-red: #c0392b;
+    --accent-green: #1a6b3c;
+    --border: #e2d9c8;
+    --shadow: rgba(13,27,42,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    line-height: 1.8;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 60%, #1e3a5f 100%);
+    padding: 60px 20px 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(200,146,42,0.18) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -40px;
+    width: 250px; height: 250px;
+    background: radial-gradient(circle, rgba(200,146,42,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .hero-label {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 6px 18px;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(22px, 5.5vw, 38px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero h1 span {
+    color: var(--gold-light);
+  }
+
+  .hero-sub {
+    font-size: clamp(14px, 3.5vw, 17px);
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-price-box {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(200,146,42,0.4);
+    border-radius: 12px;
+    padding: 24px 28px;
+    display: inline-block;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(4px);
+  }
+  .hero-price-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 4px;
+  }
+  .hero-price {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(36px, 9vw, 56px);
+    font-weight: 900;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+  .hero-price small {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .hero-cta {
+    display: block;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 18px 36px;
+    border-radius: 8px;
+    max-width: 360px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 6px 24px rgba(200,146,42,0.45);
+    letter-spacing: 0.05em;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .hero-cta:active { transform: scale(0.98); }
+  .hero-cta-sub {
+    font-size: 12px;
+    color: rgba(255,255,255,0.55);
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ===== SECTION WRAPPER ===== */
+  .section {
+    padding: 56px 20px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .section-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(20px, 5vw, 28px);
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  .section-title .accent {
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold-light);
+    padding-bottom: 2px;
+  }
+
+  /* ===== PAIN BLOCK ===== */
+  .pain-section {
+    background: var(--navy);
+    padding: 56px 20px;
+  }
+  .pain-inner {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .pain-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(18px, 4.5vw, 26px);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 28px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .pain-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .pain-list li {
+    background: rgba(255,255,255,0.06);
+    border-left: 3px solid var(--gold);
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    color: rgba(255,255,255,0.88);
+    font-size: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .pain-list li::before {
+    content: '…';
+    color: var(--gold);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ===== DIVIDER ===== */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0;
+  }
+
+  /* ===== PROFILE ===== */
+  .profile-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 4px 24px var(--shadow);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    border: 1px solid var(--border);
+  }
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    flex-shrink: 0;
+    border: 3px solid var(--gold);
+  }
+  .profile-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .profile-role {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .profile-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .profile-tag {
+    background: var(--gold-pale);
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(200,146,42,0.3);
+  }
+  .profile-text {
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 1.8;
+  }
+
+  /* ===== CONTENTS LIST ===== */
+  .contents-box {
+    background: var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--shadow);
+  }
+  .contents-header {
+    background: var(--navy);
+    padding: 16px 24px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gold-light);
+    letter-spacing: 0.1em;
+  }
+  .contents-chapter {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .contents-chapter:last-child { border-bottom: none; }
+  .chapter-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .chapter-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .chapter-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .chapter-items li {
+    font-size: 13px;
+    color: var(--text-mid);
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.7;
+  }
+  .chapter-items li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 10px;
+    top: 4px;
+  }
+
+  /* ===== BONUS ===== */
+  .bonus-section {
+    background: var(--gold-pale);
+    padding: 56px 20px;
+    border-top: 1px solid rgba(200,146,42,0.2);
+    border-bottom: 1px solid rgba(200,146,42,0.2);
+  }
+  .bonus-inner { max-width: 680px; margin: 0 auto; }
+  .bonus-label {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 4px 14px;
+    border-radius: 2px;
+    margin-bottom: 12px;
+  }
+  .bonus-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
+  }
+  .bonus-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border: 1px solid rgba(200,146,42,0.2);
+    box-shadow: 0 2px 12px rgba(200,146,42,0.08);
+  }
+  .bonus-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .bonus-card-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+    line-height: 1.5;
+  }
+  .bonus-card-text {
+    font-size: 13px;
+    color: var(--text-mid);
+    line-height: 1.7;
+  }
+  .bonus-card-price {
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 700;
+    margin-top: 6px;
+  }
+
+  /* ===== VOICE ===== */
+  .voice-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 14px;
+    border-left: 4px solid var(--gold);
+    box-shadow: 0 2px 12px var(--shadow);
+  }
+  .voice-card p {
+    font-size: 15px;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+  .voice-name {
+    font-size: 12px;
+    color: var(--text-light);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  /* ===== FAQ ===== */
+  .faq-section {
+    background: var(--navy-mid);
+    padding: 56px 20px;
+  }
+  .faq-inner { max-width: 680px; margin: 0 auto; }
+  .faq-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(20px, 5vw, 26px);
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .faq-item {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    margin-bottom: 14px;
+    border: 1px solid rgba(200,146,42,0.2);
+    overflow: hidden;
+  }
+  .faq-q {
+    padding: 18px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gold-light);
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.6;
+    user-select: none;
+  }
+  .faq-q-mark {
+    background: var(--gold);
+    color: var(--navy);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 900;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .faq-a {
+    padding: 0 20px 18px 56px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.8;
+    display: none;
+  }
+  .faq-item.open .faq-a { display: block; }
+  .faq-toggle {
+    margin-left: auto;
+    font-size: 20px;
+    color: var(--gold);
+    flex-shrink: 0;
+    transition: transform 0.25s;
+  }
+  .faq-item.open .faq-toggle { transform: rotate(45deg); }
+
+  /* ===== CLOSING CTA ===== */
+  .closing-section {
+    background: linear-gradient(160deg, #8b0000 0%, var(--accent-red) 100%);
+    padding: 56px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .closing-section::before {
+    content: '';
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .closing-inner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
+  .closing-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 6px 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+  .closing-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(20px, 5vw, 30px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .closing-title span { color: #ffe08a; }
+  .closing-text {
+    font-size: 15px;
+    color: rgba(255,255,255,0.88);
+    margin-bottom: 28px;
+    line-height: 1.8;
+  }
+  .closing-price-area {
+    background: rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+  .closing-price-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 8px;
+  }
+  .closing-price {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(40px, 10vw, 64px);
+    font-weight: 900;
+    color: #ffe08a;
+    line-height: 1;
+  }
+  .closing-price small { font-size: 22px; font-weight: 400; }
+  .closing-note {
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+    margin-top: 6px;
+  }
+  .closing-cta {
+    display: block;
+    background: linear-gradient(135deg, #ffe08a 0%, var(--gold-light) 100%);
+    color: #6b1a1a;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 20px 36px;
+    border-radius: 10px;
+    max-width: 420px;
+    margin: 0 auto 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .closing-cta:active { transform: scale(0.97); }
+  .closing-guarantee {
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+    margin-top: 14px;
+  }
+
+  /* ===== URGENCY BAR ===== */
+  .urgency-bar {
+    background: #ffe08a;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #6b1a1a;
+    letter-spacing: 0.05em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  }
+  .urgency-bar span { color: var(--accent-red); }
+
+  /* ===== RESULT HIGHLIGHT ===== */
+  .result-box {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 28px;
+    border: 2px solid var(--gold);
+    box-shadow: 0 4px 24px rgba(200,146,42,0.15);
+  }
+  .result-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .result-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .result-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--text-dark);
+    line-height: 1.7;
+  }
+  .result-check {
+    width: 22px;
+    height: 22px;
+    background: var(--accent-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .result-check::after {
+    content: '✓';
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  /* ===== COMPARISON TABLE ===== */
+  .compare-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--shadow);
+    font-size: 14px;
+  }
+  .compare-table th {
+    background: var(--navy);
+    color: var(--white);
+    padding: 14px 16px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .compare-table th:first-child {
+    background: var(--navy-light);
+    text-align: left;
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.05em;
+  }
+  .compare-table th.highlight { background: var(--gold); color: var(--navy); }
+  .compare-table td {
+    padding: 13px 16px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: var(--white);
+    color: var(--text-mid);
+  }
+  .compare-table td:first-child {
+    text-align: left;
+    font-weight: 500;
+    color: var(--text-dark);
+    background: var(--cream);
+  }
+  .compare-table td.highlight {
+    background: var(--gold-pale);
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .ok { color: var(--accent-green); font-weight: 700; font-size: 18px; }
+  .ng { color: var(--text-light); font-size: 18px; }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: var(--navy);
+    padding: 32px 20px;
+    text-align: center;
+  }
+  .footer p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.8;
+  }
+  .footer-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    color: var(--gold-light);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  /* ===== UTILITY ===== */
+  .text-center { text-align: center; }
+  .mt-4 { margin-top: 16px; }
+  .mt-6 { margin-top: 24px; }
+  .mt-8 { margin-top: 32px; }
+  .mb-4 { margin-bottom: 16px; }
+
+  .lead-text {
+    font-size: clamp(15px, 3.8vw, 17px);
+    color: var(--text-mid);
+    line-height: 1.9;
+    margin-bottom: 24px;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  .pulse { animation: pulse 2.5s ease-in-out infinite; }
+
+  @media (max-width: 480px) {
+    .profile-card { flex-direction: column; }
+    .profile-avatar { width: 64px; height: 64px; font-size: 28px; }
+    .compare-table th, .compare-table td { padding: 10px 10px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar pulse">
+  ⏰ 期間限定価格 — <span>4月30日まで</span>の早割。終了後は値上げ予定。
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-label">ボーン × note 公式</div>
+  <h1>
+    副業ゼロからスタートした<br>
+    放射線技師が<span>月30万円</span>を<br>
+    稼ぐまでの完全ロードマップ
+  </h1>
+  <p class="hero-sub">
+    夜勤・当直明けでも再現できる。<br>資格・経験を"お金"に換える最短ルート。
+  </p>
+  <div class="hero-price-box">
+    <div class="hero-price-label">通常価格</div>
+    <div class="hero-price"><small>¥</small>1,980</div>
+  </div>
+  <br>
+  <a href="https://note.com/vast_sedum5219/n/nff6c09e95dbc" class="hero-cta">
+    今すぐ購入してロードマップを手に入れる →
+  </a>
+  <p class="hero-cta-sub">note公式決済 </p>
+</header>
+
+<!-- PAIN -->
+<section class="pain-section">
+  <div class="pain-inner">
+    <h2 class="pain-title">
+      こんなことを考えたこと、<br>ありませんか？
+    </h2>
+    <ul class="pain-list">
+      <li>技師として真面目に働いているのに、給料が全然上がらない</li>
+      <li>副業に興味はあるけど、何から始めればいいかわからない</li>
+      <li>転職や独立より"今の職場で続けながら"収入を増やしたい</li>
+      <li>夜勤・時間外対応で疲弊していて、副業に使える時間が少ない</li>
+    </ul>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+  <h2 class="section-title">そのモヤモヤ、<span class="accent">正しい地図</span>さえあれば解決できます</h2>
+  <p class="lead-text">
+    私ボーンは、総合病院で12年勤務する現役の放射線技師です。副主任として現場を回しながら、note・ブログ・Xを運用し、技師向けコンテンツで継続的な副収入を得ています。
+  </p>
+  <p class="lead-text">
+    はじめは全くの素人でした。「何を発信すればいいのか」「どのプラットフォームで稼げるのか」「本業とバレずに続けられるのか」——そのすべてを手探りで学び、失敗と改善を繰り返してきました。
+  </p>
+  <p class="lead-text">
+    このnoteは、その試行錯誤の全記録です。<strong>遠回りをせず、最短で月30万円の副収入を作るための地図</strong>を、あなたに渡します。
+  </p>
+
+  <div class="result-box mt-8">
+    <div class="result-title">📌 このnoteを読み終えると、あなたは…</div>
+    <ul class="result-list">
+      <li><span class="result-check"></span>放射線技師の専門性を活かした副業ジャンルが明確になる</li>
+      <li><span class="result-check"></span>月30万円を達成するまでの具体的なステップがわかる</li>
+      <li><span class="result-check"></span>本業にバレずに継続できる時間管理術が身につく</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- AUTHOR PROFILE -->
+<section class="section">
+  <h2 class="section-title mb-4">著者プロフィール</h2>
+  <div class="profile-card">
+    <div class="profile-avatar">🦴</div>
+    <div>
+      <div class="profile-name">ボーン</div>
+      <div class="profile-role">放射線技師 ／ 副主任 ／ コンテンツクリエイター</div>
+      <div class="profile-tags">
+        <span class="profile-tag">技師歴12年</span>
+        <span class="profile-tag">日商簿記2級</span>
+        <span class="profile-tag">臨床実習指導教員</span>
+        <span class="profile-tag">note運用</span>
+        <span class="profile-tag">AI・DX</span>
+      </div>
+      <p class="profile-text">
+        総合病院で副主任として勤務しながら、放射線技師向けの情報発信を継続中。AI活用・キャリア戦略・副業ノウハウを発信するnoteシリーズは、同職種から高い支持を集める。「現場を知る人間が書く、現場で使えるコンテンツ」をモットーに活動中。
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CONTENTS -->
+<section class="section">
+  <h2 class="section-title">📖 <span class="accent">目次・収録内容</span></h2>
+  <div class="contents-box">
+    <div class="contents-header">CONTENTS — 全6章 </div>
+
+    <div class="contents-chapter">
+      <div class="chapter-num">Chapter 01</div>
+      <div class="chapter-title">放射線技師が副業をすべき3つの理由</div>
+      <ul class="chapter-items">
+        <li>平均年収の頭打ち（データで見る現実）</li>
+        <li>専門知識が収益化しやすい</li>
+        <li>働き方改革で時間ができた</li>
+      </ul>
+    </div>
+
+    <div class="contents-chapter">
+      <div class="chapter-num">Chapter 02</div>
+      <div class="chapter-title">放射線技師におすすめの副業6選【月収別】</div>
+      <ul class="chapter-items">
+        <li>月5万円レベル｜医療ライティング</li>
+        <li>月5万円レベル｜note有料記事販売</li>
+        <li>月10万円レベル｜Kindle出版</li>
+        <li>月15万円レベル｜オンライン講座</li>
+        <li>月20万円レベル｜医療系YouTuber</li>
+        <li>月30万円レベル｜複合戦略</li>
+
+      </ul>
+    </div>
+
+    <div class="contents-chapter">
+      <div class="chapter-num">Chapter 03</div>
+      <div class="chapter-title">放射線技師の副業の始め方【5ステップ】</div>
+      <ul class="chapter-items">
+        <li>ステップ1：スキルの棚卸し</li>
+        <li>ステップ2：市場リサーチ</li>
+        <li>ステップ3：最初の商品作成</li>
+        <li>ステップ4：SNSで発信</li>
+        <li>ステップ5：収益化</li>
+      </ul>
+    </div>
+
+    <div class="contents-chapter">
+      <div class="chapter-num">Chapter 04</div>
+      <div class="chapter-title">副業が会社にバレない方法【確定申告の注意点】</div>
+      <ul class="chapter-items">
+        <li>原因1：住民税の金額でバレる（最多）</li>
+        <li>原因2：SNSの投稿でバレる</li>
+        <li>原因3：同僚に話してバレる</li>
+      </ul>
+    </div>
+
+    <div class="contents-chapter">
+      <div class="chapter-num">Chapter 05</div>
+      <div class="chapter-title">放射線技師の副業でよくある質問10選</div>
+      <ul class="chapter-items">
+        <li>Q1：副業は会社にバレますか？</li>
+        <li>Q2：確定申告は必要ですか？</li>
+        <li>Q3：初期費用はいくらかかりますか？</li>
+        <li>Q4：副業に使える時間がありません。</li>
+        <li>Q5：文章を書くのが苦手です。</li>
+        <li>Q6：実績ゼロでも稼げますか？</li>
+        <li>Q7：競合が多くて勝てる気がしません。</li>
+        <li>Q8：副業が軌道に乗るまで、どのくらいかかりますか？</li>
+        <li>Q9：本業に支障は出ませんか？</li>
+        <li>Q10：家族に反対されたらどうすればいいですか？</li>
+
+      </ul>
+    </div>
+
+    <div class="contents-chapter">
+      <div class="chapter-num">Chapter 06</div>
+      <div class="chapter-title">まとめ：放射線技師の副業は「専門性」が武器</div>
+      <ul class="chapter-items">
+        <li>放射線技師が副業をすべき3つの理由</li>
+        <li>おすすめの副業6選</li>
+        <li>5ステップで始める</li>
+        <li>会社にバレない方法</li>
+      </ul>
+    </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="section" style="padding-top:0;">
+  <h2 class="section-title">他の情報との<span class="accent">圧倒的な違い</span></h2>
+  <div style="overflow-x:auto;">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>比較ポイント</th>
+          <th class="highlight">このnote</th>
+          <th>無料ブログ記事</th>
+          <th>一般的な副業本</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>放射線技師向け特化</td>
+          <td class="highlight ok">◎</td>
+          <td class="ng">△</td>
+          <td class="ng">✕</td>
+        </tr>
+        <tr>
+          <td>法律・税務の注意事項</td>
+          <td class="highlight ok">◎</td>
+          <td class="ng">△</td>
+          <td class="ng">◯</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- VOICE -->
+<section class="section">
+  <h2 class="section-title">読んでくれた方の<span class="accent">声</span></h2>
+  <div class="voice-card">
+    <p>「副業って怪しいイメージがあって踏み出せなかったのですが、確定申告の注意点まで書いてあって安心できました。技師向けというのが一番刺さりました」</p>
+    <div class="voice-name">— 30代男性 ／ 総合病院 放射線技師</div>
+  </div>
+  <div class="voice-card">
+    <p>「今日やること・今週やることが明確になって、購入して2ヶ月でnoteの初売上が出ました」</p>
+    <div class="voice-name">— 20代女性 ／ クリニック勤務 技師</div>
+  </div>
+  <div class="voice-card">
+    <p>「夜勤明けでもスマホで記事が作れるようになって、継続できています」</p>
+    <div class="voice-name">— 30代男性 ／ 大学病院 技師</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <h2 class="faq-title">よくある質問（FAQ）</h2>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-mark">Q</span>
+        副業初心者でも本当に月3万円は達成できますか？
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-a">
+        はい、達成できます。ただし「すぐに3万円」ではなく、継続が前提です。このnoteでは「初月から〇〇万円！」のような誇大な約束は一切していません。放射線技師としての専門知識を活かしたコンテンツを、正しい手順で作成・発信し続ければ、多くの方が2〜3ヶ月以内に初売上を経験しています。スキルや経験よりも「継続できる仕組みを先に作る」ことが最も重要で、その仕組みを丸ごとお渡しします。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-mark">Q</span>
+        本業の職場にバレてしまうリスクはありませんか？
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-a">
+        適切な対策を取れば、バレるリスクはほぼゼロになります。このnoteでは、住民税の特別徴収から普通徴収への切り替え手順を解説しています。私自身も同じ方法で2年以上、職場に何も言わず副業を継続できています。ただし「無許可での副業が明示的に禁止されている公務員」の方は、必ず職場の規則を確認してから判断してください。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-mark">Q</span>
+        夜勤や残業が多くて時間がありません。続けられますか？
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-a">
+        このnoteは「週2時間以内」で継続できることを設計の前提にしています。私自身、当直や夜勤をこなしながらコンテンツを発信しているので、時間がないという課題は熟知しています。
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-mark">Q</span>
+        PCやITに詳しくないと難しいですか？
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-a">
+        スマホとnoteアカウントがあれば始められます。PCはあくまで作業効率化のためのもので、必須ではありません。実際に、私のフォロワーさんの中には「PCを持っていない」「PCが苦手」という方も多くいますが、スマホだけで記事作成から投稿まで完結させて、月数万円を稼いでいる方はたくさんいます。Chapter 06では、スマホだけで副業を継続するための具体的な方法も解説しています。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-mark">Q</span>
+        1,980円は高くないですか？他の無料情報との違いは？
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-a">
+        「放射線技師専門」の副業ロードマップは、無料では手に入りません。一般的な副業情報は技師の現場・職場環境・法的リスクを考慮していないため、そのまま使うと遠回りになります。このnoteの情報を活かして月5万円を1ヶ月達成すれば、1,980円の回収は数日以内です。もし「期待外れだった」という場合は、購入後48時間以内にXのDMでご連絡ください。個別に対応します。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="closing-section" id="buy">
+  <div class="closing-inner">
+    <div class="closing-badge">🔥 早割期間中 — 4月30日まで</div>
+    <h2 class="closing-title">
+      今日行動しない人は、<br>
+      <span>1年後も同じ給料</span>のままです。
+    </h2>
+    <p class="closing-text">
+      「いつか副業を始めよう」と思い続けて、気づけば半年が経過している——そんな経験はありませんか？<br><br>
+      このnoteを読み終えた翌日から、あなたは動き始めることができます。1,980円は、副業で月3万円を稼ぐための<strong>最小限の初期投資</strong>です。
+    </p>
+    <div class="closing-price-area">
+      <div class="closing-price-sub">今すぐ購入できます</div>
+      <div class="closing-price"><small>¥</small>1,980</div>
+      <div class="closing-note">本編 </div>
+    </div>
+    <a href="https://note.com/vast_sedum5219/n/nff6c09e95dbc" class="closing-cta">
+      📖 今すぐ購入してダウンロード<br>
+      <span style="font-size:14px; font-weight:500;">▶ noteの決済ページへ進む</span>
+    </a>
+    <p class="closing-guarantee">
+      🔒 note公式決済 ／ SSL暗号化 <br>
+      購入後48時間以内のご相談はXのDM(https://x.com/kw20260202)まで
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-name">ボーン（Bone）</div>
+  <p>
+    放射線技師 ／ 副主任 ／ note・X・ブログ運用中<br>
+    本コンテンツの無断転載・再配布を禁じます<br>
+    記載の情報は個人の体験・見解であり、収入を保証するものではありません
+  </p>
+</footer>
+
+<script>
+function toggleFaq(el) {
+  const item = el.closest('.faq-item');
+  item.classList.toggle('open');
+}
+</script>
+</body>
+</html>
